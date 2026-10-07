@@ -22,23 +22,26 @@
   </main>
   <div>
     <p id="ex1">1- Alterar o texto do Menu 1 para Item 1.</p>
-    <p id="ex1">1- Alterar o texto do Menu 2 para Item 2 atraves da Tag.</p>
+    <p id="ex2">2- Alterar o texto do Menu 2 para Item 2 atraves da Tag.</p>
     <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandos".</p>
+    <p id="ex4">4 - Alterar a cor da id "exit1", do segundo item da classe "comandos para verde".</p>
   </div>
    <script>
     //1
-    documente.getElementByTagName("p")[0].innerHTML = "Item 1";
+    document.getElementByTagName("p")[0].innerHTML = "Item 1";
     //2
-    documente.getElementByTagName("p")[1].innerHTML = "Item 2";
+    document.getElementByTagName("p")[1].innerHTML = "Item 2";
     //3
-    documente.getElementByClassName("comandos")[0].innerHTML = 
-    documente.getElementByClassName("comandos")[0].innerHTML + "()";
-    documente.getElementByClassName("comandos")[1].innerHTML = 
-    documente.getElementByClassName("comandos")[1].innerHTML + "()";
-    documente.getElementByClassName("comandos")[2].innerHTML = 
-    documente.getElementByClassName("comandos")[2].innerHTML + "()";
-
-
+    document.getElementByClassName("comandos")[0].innerHTML = 
+    document.getElementByClassName("comandos")[0].innerHTML + "()";
+    document.getElementByClassName("comandos")[1].innerHTML = 
+    document.getElementByClassName("comandos")[1].innerHTML + "()";
+    document.getElementByClassName("comandos")[2].innerHTML = 
+    document.getElementByClassName("comandos")[2].innerHTML + "()";
+    //4
+    document.getElementById("ex1").style.color = "green";
+    document.getElementByClassName("comandos")[1].style.color = "green";
+    
    </script>
 </body>
 </html>
