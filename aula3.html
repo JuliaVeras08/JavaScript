@@ -28,6 +28,9 @@
     <p id="ex5">5 - Colocar uma borda na div com o "querySelector".</p>
     <p id="ex6">6 - Alterar o tamanho do texto do ex1 utilizando querySelector.</p>
     <p id="ex7">7 - Alterar o texto para negrito do elemento da primeira class "comandos" utilizando querySelector.</p>
+    <p id="ex8">8 - Alterar a div: arredondar as bordas, cor de fundo rosa claro e alterar a cor das letras para vermelho.</p>
+    <p id="ex9">9 - .</p>
+    <p id="ex10">10 - .</p>
   </div>
    <script>
     //1
@@ -45,11 +48,15 @@
     document.getElementById("ex1").style.color = "green";
     document.getElementsByClassName("comandos")[1].style.color = "green";
     //5
-    document.querySelector("div").style.border = "3px dashed blue";
+    document.querySelector("div").style.border = "3px dashed black";
     //6
     document.querySelector("#ex1").style.fontSize = "25px";
     //7
     document.querySelector(".comandos").style.fontWeight = "bold";
+    //8
+    document.querySelector("div").style.backgroundColor = "lightpink";
+    document.querySelector("div").style.borderRadius = "20px";
+    document.querySelector("div").style.color = "red";
    </script>
 </body>
 </html>
