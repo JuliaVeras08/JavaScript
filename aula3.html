@@ -21,22 +21,22 @@
     <p>Comandos para pegar os elementos.</p>
   </main>
   <div>
-    <p id="ex1">1- Alterar o texto do Menu 1 para Item 1.</p>
-    <p id="ex2">2- Alterar o texto do Menu 2 para Item 2 atraves da Tag.</p>
+    <p id="ex1">1 - Alterar o texto do Menu 1 para Item 1.</p>
+    <p id="ex2">2 - Alterar o texto do Menu 2 para Item 2 atraves da Tag.</p>
     <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandos".</p>
     <p id="ex4">4 - Alterar a cor da id "ex1", do segundo item da classe "comandos" para verde.</p>
     <p id="ex5">5 - Colocar uma borda na div com o "querySelector".</p>
     <p id="ex6">6 - Alterar o tamanho do texto do ex1 utilizando querySelector.</p>
     <p id="ex7">7 - Alterar o texto para negrito do elemento da primeira class "comandos" utilizando querySelector.</p>
     <p id="ex8">8 - Alterar a div: arredondar as bordas, cor de fundo rosa claro e alterar a cor das letras para vermelho.</p>
-    <p id="ex9">9 - .</p>
+    <p id="ex9">9 - Alterar o ex1 e 2 para variáveis.</p>
     <p id="ex10">10 - .</p>
   </div>
    <script>
-    //1
-    document.getElementsByTagName("p")[0].innerHTML = "Item 1";
-    //2
-    document.getElementsByTagName("p")[1].innerHTML = "Item 2";
+    let item1e2 = document.getElementsByTagName("p");
+    //1 e 2
+    item1e2[0].innerHTML = "Item 1";
+    item1e2[1].innerHTML = "Item 2";
     //3
     document.getElementsByClassName("comandos")[0].innerHTML = 
     document.getElementsByClassName("comandos")[0].innerHTML + "()";
@@ -61,6 +61,8 @@
     div.borderRadius = "20px";
     div.backgroundColor = "pink";
     div.color = "red";
+    //9
+
    </script>
 </body>
 </html>
