@@ -13,6 +13,10 @@
       <p>Menu 3</p>
     </nav>
   </header>
+
+  <button> Ocultar Div </button>
+  <button> Mostrar Div </button>
+
   <main>
     <h2 id="titulo">Aula 3 JavaScript DOM</h2>
     <p class="comandos">getElementById</p>
@@ -20,6 +24,7 @@
     <p class="comandos">getElementByClassName</p>
     <p>Comandos para pegar os elementos.</p>
   </main>
+
   <div>
     <p id="ex1">1 - Alterar o texto do Menu 1 para Item 1.</p>
     <p id="ex2">2 - Alterar o texto do Menu 2 para Item 2 atraves da Tag.</p>
@@ -30,13 +35,15 @@
     <p id="ex7">7 - Alterar o texto para negrito do elemento da primeira class "comandos" utilizando querySelector.</p>
     <p id="ex8">8 - Alterar a div: arredondar as bordas, cor de fundo rosa claro e alterar a cor das letras para vermelho.</p>
     <p id="ex9">9 - Alterar o ex1 e 2 para variáveis.</p>
-    <p id="ex10">10 - .</p>
+    <p id="ex10">10 - Colocar os botoes para funcionar.</p>
   </div>
+
    <script>
     let item1e2 = document.getElementsByTagName("p");
     //1 e 2
     item1e2[0].innerHTML = "Item 1";
     item1e2[1].innerHTML = "Item 2";
+
     //3
     document.getElementsByClassName("comandos")[0].innerHTML = 
     document.getElementsByClassName("comandos")[0].innerHTML + "()";
@@ -44,15 +51,20 @@
     document.getElementsByClassName("comandos")[1].innerHTML + "()";
     document.getElementsByClassName("comandos")[2].innerHTML = 
     document.getElementsByClassName("comandos")[2].innerHTML + "()";
+
     //4
     document.getElementById("ex1").style.color = "green";
     document.getElementsByClassName("comandos")[1].style.color = "green";
+
     //5
     document.querySelector("div").style.border = "3px dashed black";
+
     //6
     document.querySelector("#ex1").style.fontSize = "25px";
+
     //7
     document.querySelector(".comandos").style.fontWeight = "bold";
+
     //8
     //document.querySelector("div").style.backgroundColor = "lightpink";
     //document.querySelector("div").style.borderRadius = "20px";
@@ -61,8 +73,10 @@
     div.borderRadius = "20px";
     div.backgroundColor = "pink";
     div.color = "red";
+
     //9
 
    </script>
+
 </body>
 </html>
